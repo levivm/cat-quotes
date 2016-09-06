@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		/*-------------------------------*/
+		/*      Code snippet by          */
+		/*      @maridlcrmn              */
+		/*-------------------------------*/
+
+
+		section {
+		    padding-top: 100px;
+		    padding-bottom: 100px;
+		}
+
+		.quote {
+		    color: rgba(0,0,0,.1);
+		    text-align: center;
+		    margin-bottom: 30px;
+		}
+
+		/*-------------------------------*/
+		/*    Carousel Fade Transition   */
+		/*-------------------------------*/
+
+		#fade-quote-carousel.carousel {
+		  padding-bottom: 60px;
+		}
+		#fade-quote-carousel.carousel .carousel-inner .item {
+		  opacity: 0;
+		  -webkit-transition-property: opacity;
+		      -ms-transition-property: opacity;
+		          transition-property: opacity;
+		}
+		#fade-quote-carousel.carousel .carousel-inner .active {
+		  opacity: 1;
+		  -webkit-transition-property: opacity;
+		      -ms-transition-property: opacity;
+		          transition-property: opacity;
+		}
+		#fade-quote-carousel.carousel .carousel-indicators {
+		  bottom: 10px;
+		}
+		#fade-quote-carousel.carousel .carousel-indicators > li {
+		  background-color: #e84a64;
+		  border: none;
+		}
+		#fade-quote-carousel blockquote {
+		    text-align: center;
+		    border: none;
+		}
+		#fade-quote-carousel .profile-circle {
+		    width: 100px;
+		    height: 100px;
+		    margin: 0 auto;
+		    border-radius: 100px;
+		}
+	</style>
+
+</head>
+<body>
+	<section id="carousel">    				
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+	                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+					<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+					  <!-- Carousel indicators -->
+	                  <ol class="carousel-indicators">
+					    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+					  </ol>
+					  <!-- Carousel items -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					    	<img class="profile-circle img-responsive" src="https://s-media-cache-ak0.pinimg.com/564x/12/f6/d1/12f6d18125126757df29e733051697b8.jpg" alt="">
+					    	<blockquote>
+					    		<p>{{cat_quote_one}}</p>
+					    	</blockquote>	
+					    </div>
+					    <div class="item">
+					    	<img class="profile-circle img-responsive" src="https://66.media.tumblr.com/avatar_ad6c1cb12b85_128.png" alt="">
+					    	<blockquote>
+					    		<p>{{cat_quote_two}}</p>
+					    	</blockquote>
+					    </div>
+					  </div>
+					</div>
+				</div>							
+			</div>
+		</div>
+	</section>
+</body>
+</html>
